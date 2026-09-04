@@ -1,0 +1,8 @@
+[
+  {
+    "name": "morpheus",
+    "job": "leader",
+    "expectedStatus": 201,
+    "responseTimeLimit": 500
+  }
+]

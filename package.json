@@ -1,0 +1,25 @@
+{
+  "name": "moxymind",
+  "version": "1.0.0",
+  "description": "Playwright API and UI tests for the Moxymind assignment",
+  "scripts": {
+    "test": "playwright test",
+    "test:task1": "playwright test task_1/tests/usersTest.spec.ts",
+    "test:task2": "playwright test task_2/test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["playwright", "testing", "typescript"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.4.0",
+    "typescript": "^7.0.2"
+  }
+}
