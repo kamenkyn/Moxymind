@@ -37,7 +37,7 @@ export class LoginPage {
     await expect(this.errorContainer).toContainText(/locked out/i);
   }
 
-  async expectSomeError() {
-    await expect(this.errorContainer).toBeVisible();
-  }
+  // async expectSomeError() {
+  //   await expect(this.errorContainer).toBeVisible();
+  // }
 }

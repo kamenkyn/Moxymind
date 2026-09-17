@@ -5,7 +5,7 @@
   "scripts": {
     "test": "playwright test",
     "test:task1": "playwright test task_1/tests/usersTest.spec.ts",
-    "test:task2": "playwright test task_2/test",
+    "test:task2": "playwright test task_2/test/",
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
     "typecheck": "tsc --noEmit"

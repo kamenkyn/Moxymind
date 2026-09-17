@@ -6,13 +6,14 @@ export default defineConfig({
   expect: {
     timeout: 5_000,
   },
-  fullyParallel: false,
+  fullyParallel: true,
   reporter: [
+    ['json'],
     ['list'],
     ['html', { open: 'never' }],
   ],
   use: {
-    headless: true,
+    headless: false,
     viewport: { width: 1280, height: 720 },
     actionTimeout: 0,
     ignoreHTTPSErrors: true,

@@ -20,7 +20,7 @@ async function logout(page: import('@playwright/test').Page) {
   }
 }
 
-//standard user should see the expected backpack image and be able to add and remove it from the cart
+//standard user should see the expected backpack image and be able to add article and remove it from the cart
 //check if the prices for all products are as expected for standard_user 
 test('standard_user show the expected backpack image', async ({ page }) => {
   await loginAs(page, USERS.STANDARD);
@@ -38,7 +38,7 @@ test('standard_user show the expected backpack image', async ({ page }) => {
   await logout(page); 
 });
 
-//error_user should see the expected backpack image and be able to add and not be able to remove it from the cart
+//error_user should see the expected backpack image and be able to add article and not be able to remove it from the cart
 test('error_user show the expected backpack image', async ({ page }) => {
   await loginAs(page, USERS.ERROR);
   const product = new ProductPage(page);
@@ -72,7 +72,7 @@ test('visual_user shows a different backpack image', async ({ page }) => {
   });
 });
 
-//performance_glitch_user should have a slow login and the standard backpack image
+//performance_glitch_user should have a slow login time and the standard backpack image
 test('performance_glitch_user has a slow login and the standard backpack image', async ({ page }) => {
   test.setTimeout(120_000);
   const login = new LoginPage(page);
